@@ -1,0 +1,32 @@
+[
+  {
+    "name": "HTML",
+    "icon": "fa-html5",
+    "percent": 100
+  },
+  {
+    "name": "CSS",
+    "icon": "fa-css3-alt",
+    "percent": 90
+  },
+  {
+    "name": "JavaScript",
+    "icon": "fa-js",
+    "percent": 80
+  },
+  {
+    "name": "React.js",
+    "icon": "fa-react",
+    "percent": 60
+  },
+  {
+    "name": "Node.js",
+    "icon": "fa-node-js",
+    "percent": 75
+  },
+  {
+    "name": "SQL",
+    "icon": "fa-database",
+    "percent": 70
+  }
+]

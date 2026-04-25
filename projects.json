@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Automated Fastener",
+    "image": "./assets/image1.png",
+    "stack": "Python · YOLO · OpenCV",
+    "live": "https://afms.netlify.app/",
+    "code": "https://github.com/ShaikFayaz042/Automated-Fastener-Measurement-System",
+    "category": "ml"
+  },
+  {
+    "title": "AI Interviewer",
+    "image": "./assets/image2.png",
+    "stack": "MERN · Gemini · AI",
+    "live": "#",
+    "code": "#",
+    "category": "web"
+  },
+  {
+    "title": "Portfolio",
+    "image": "./assets/image3.jpg",
+    "stack": "HTML · CSS · JS",
+    "live": "#",
+    "code": "#",
+    "category": "web"
+  }
+]

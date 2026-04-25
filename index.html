@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fayaz — Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets\photo.png">
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <nav id="navbar">
+        <div id="logo">Fayaz</div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="./assets/resume/Fayaz_Resume.pdf" target="_blank" class="btn-resume"><i
+                        class="fa-solid fa-download"></i> Resume</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header id="hero">
+        <div class="hero-bg-blur"></div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <p class="greeting">Hi, I'm</p>
+                <h1 class="hero-name">Fayaz</h1>
+                <h2 class="hero-role">Full Stack <span class="accent">Developer</span></h2>
+                <p class="hero-intro">Aspiring Software Developer passionate about building impactful products, solving
+                    real-world problems, and mastering modern technologies.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/shaik-fayaz2026" class="social-btn"><i
+                            class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+                    <a href="https://github.com/ShaikFayaz042" class="social-btn"><i
+                            class="fa-brands fa-github"></i><span>GitHub</span></a>
+                    <a href="https://x.com/shaikFayaz55315" class="social-btn"><i
+                            class="fa-brands fa-x-twitter"></i><span>Twitter</span></a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-img-wrap">
+                    <img src="./assets/photo.png" alt="Fayaz profile photo">
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <div class="section-label">01 / About</div>
+        <div class="about-inner">
+            <div class="about-text">
+                <h2 class="section-title">About Me</h2>
+                <p>Hi, I'm Fayaz — an aspiring Software Developer transitioning from a Mechanical Engineering background
+                    into the world of technology. I'm currently strengthening my skills in <strong>Java</strong>,
+                    <strong>Data Structures & Algorithms</strong>, and the <strong>MERN stack</strong>.
+                </p>
+                <p>I enjoy building modern web applications, solving real-world problems, and continuously learning new
+                    technologies. My engineering background gives me a unique problem-solving perspective that I bring
+                    to every project.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <span class="stat-num">6+</span>
+                    <span class="stat-label">Projects Built</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">2+</span>
+                    <span class="stat-label">Years Learning</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">MERN</span>
+                    <span class="stat-label">Stack Focus</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="section-label">02 / Skills</div>
+        <h2 class="section-title centered">Skills</h2>
+        <div class="skill-grid" id="skill-grid-container"></div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="section-label">03 / Work</div>
+        <div class="projects-header">
+            <h2 class="section-title">My Projects</h2>
+            <p class="projects-sub">Some of my recent work</p>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">Apps</button>
+                <button class="filter-btn" data-filter="ml">ML</button>
+            </div>
+        </div>
+        <div class="project-grid" id="project-grid-container"></div>
+        <div class="view-all-wrap">
+            <a href="#" class="btn-view-all">View All Projects <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="section-label">04 / Contact</div>
+        <div class="contact-inner">
+            <div class="contact-left">
+                <h2 class="section-title">Get In Touch</h2>
+                <p>Need a developer you can trust? Have a project in mind or just want to say hello? I'd love to hear
+                    from you.</p>
+                <div class="contact-info">
+                    <span><i class="fa-solid fa-envelope"></i> fayaz03c9@gmail.com</span>
+                    <span><i class="fa-solid fa-location-dot"></i> Hyderabad, India</span>
+                </div>
+            </div>
+            <div class="contact-right">
+                <div class="contact-form" id="contact-form">
+                    <input class="form-input" type="text" id="user_name" placeholder="Your Name" required>
+                    <input class="form-input" type="email" id="user_email" placeholder="Your Email" required>
+                    <textarea class="form-input" id="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button class="btn-send" id="send-btn" onclick="sendEmail()">
+                        Send Message <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <p id="status-msg" style="display:none; margin-top:10px; font-size:0.88rem;"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">Fayaz</div>
+        <p class="footer-copy">© 2026 Fayaz. All rights reserved.</p>
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/shaik-fayaz2026" aria-label="LinkedIn"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/ShaikFayaz042" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/shaikFayaz55315" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
