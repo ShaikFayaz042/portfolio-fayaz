@@ -19,8 +19,8 @@
     "title": "Portfolio",
     "image": "./assets/image3.jpg",
     "stack": "HTML · CSS · JS",
-    "live": "#",
-    "code": "#",
+    "live": "https://fayaz-dev.netlify.app/",
+    "code": "https://github.com/ShaikFayaz042/portfolio-fayaz",
     "category": "web"
   }
 ]
