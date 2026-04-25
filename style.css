@@ -31,9 +31,8 @@ body {
     font-family: var(--font-body);
     line-height: 1.6;
     overflow-x: hidden;
-    width: 100%;
-    position: relative;
 }
+body.menu-open { overflow: hidden; position: fixed; }
 
 /* ==============================
    Scroll Reveal
@@ -148,12 +147,6 @@ body {
 .hamburger.active span:nth-child(2) { opacity: 0; }
 .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* Lock body scroll when menu is open */
-body.menu-open {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-}
 /* ==============================
    Hero
    ============================== */
@@ -185,14 +178,14 @@ body.menu-open {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;  /* better default */
-    gap: 40px;
+    justify-content: flex-start;
+    gap: 100px;
 }
 
 .hero-left {
     flex: 1;
     max-width: 560px;
-    margin-left: 0;   /* important – remove left margin globally */
+    margin-left: 50px;   
 }
 
 .greeting {
@@ -592,6 +585,21 @@ section {
     background: var(--accent);
     color: #fff;
 }
+@media (max-width: 480px) {
+    .project-links {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .btn-live, .btn-code {
+        justify-content: center;
+    }
+}
+@media (max-width: 640px) {
+    .btn-send {
+        align-self: stretch;
+        justify-content: center;
+    }
+}
 /* ==============================
    Contact
    ============================== */
@@ -865,13 +873,4 @@ footer {
     .hero-content {
         gap: 15px;
     }
-}
-
-/* Global reset for overflow */
-#navbar, #hero, section, footer, .hero-content, .hero-left, .hero-right {
-    overflow-x: hidden;
-}
-img, iframe, video {
-    max-width: 100%;
-    height: auto;
 }
