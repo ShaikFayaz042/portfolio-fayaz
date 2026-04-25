@@ -594,7 +594,7 @@ section {
         justify-content: center;
     }
 }
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .btn-send {
         align-self: stretch;
         justify-content: center;
@@ -781,8 +781,8 @@ footer {
     }
 }
 
-/* Mobile (max-width: 640px) */
-@media (max-width: 640px) {
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
     #navbar {
         padding: 0 4%;
         width: 100%;
