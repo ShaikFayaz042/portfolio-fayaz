@@ -116,15 +116,18 @@ if (hamburger && navLinks) {
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('open');
         hamburger.classList.toggle('active');
+        document.body.classList.toggle('menu-open');   // body scroll lock
     });
 
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('open');
             hamburger.classList.remove('active');
+            document.body.classList.remove('menu-open');  // unlock scroll
         });
     });
 }
+
 
 // ==============================
 // Sticky Navbar
