@@ -11,8 +11,8 @@
     "title": "AI Interviewer",
     "image": "./assets/image2.png",
     "stack": "MERN · Gemini · AI",
-    "live": "#",
-    "code": "#",
+    "live": "https://mockmate-live.vercel.app/",
+    "code": "https://github.com/ShaikFayaz042/mock-mate/",
     "category": "web"
   },
   {
